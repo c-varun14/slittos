@@ -2,8 +2,13 @@
 const colors = require("tailwindcss/colors");
 
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: ["./**/*.{html,js}"],
   theme: {
+    extend: {
+      boxShadow: {
+        navShadow: "0 0 22px #222",
+      },
+    },
     screens: {
       sm: "640px",
       md: "768px",
