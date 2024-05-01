@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <link rel="stylesheet" href="output.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </head>
+
+  <body class="bg-customBg text-white">
+    <header class="bg-black py-4 shadow shadow-white">
+      <nav class="flex justify-between items-center w-[92%] mx-auto">
+        <div class="font-bold text-4xl text-customLogo">Slittos</div>
+        <!-- <img width="100" height="30" src="../logo.jpg" alt="Slittos" /> -->
+        <div
+          class="nav-links bg-black duration-500 md:static absolute md:min-h-fit min-h-[40vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5"
+        >
+          <ul
+            class="flex md:flex-row flex-col items-stretch justify-stretch text-white md:items-center md:gap-[4vw] gap-8"
+          >
+            <li class="hover:bg-customLogo py-1 px-2">
+              <a href="#aboutUs" name="aboutUs">About Us</a>
+            </li>
+            <li class="hover:bg-customLogo py-1 px-2">
+              <a href="#product" name="product">Our Product</a>
+            </li>
+            <li class="hover:bg-customLogo py-1 px-2">
+              <a href="#connect" name="connect">Connect With Us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="flex items-center gap-6 md:hidden">
+          <ion-icon
+            onclick="onToggleMenu(this)"
+            name="menu"
+            class="text-3xl cursor-pointer md:hidden"
+          >
+          </ion-icon>
+        </div>
+      </nav>
+    </header>
+
+    <section id="aboutUs" class="pb-5 text-center">
+      <img src="../public/aboutImage.jpg" alt="Could not load image" />
+      <h1
+        class="text-3xl font-bold underline-offset-4 decoration-customLogo underline my-4"
+      >
+        ABOUT US
+      </h1>
+      <p class="mx-4 max-w-4xl md:mx-auto">
+        Welcome to Slittos, where passion for gaming meets the joy of snacking!
+        Founded with a vision to revolutionize the gaming snacking experience,
+        Slittos is more than just a chips company—it's a lifestyle brand
+        dedicated to fueling gaming adventures with flavor and crunch.Our
+        journey began with a simple realization: gamers deserve snacks that are
+        as exciting and exhilarating as the games they love to play. Tired of
+        the same old options that failed to satisfy their cravings during
+        intense gaming sessions,Inspired by the vibrant energy of the gaming
+        community, we embarked on a quest to craft the perfect gaming snack.
+        After countless hours of research, development, and taste-testing,
+        Slittos was born—a tapioca chips that deliver a satisfying crunch and
+        bold flavors with every bite.
+      </p>
+    </section>
+
+    <section
+      id="product"
+      class="bg-customLogo w-full text-center py-6 px-4 mt-6"
+      data-carousel="slide"
+    >
+      <h1
+        class="text-3xl font-bold underline-offset-4 decoration-customBg my-8 underline"
+      >
+        OUR PRODUCT
+      </h1>
+      <div class="md:flex md:justify-between md:max-w-6xl mx-auto">
+        <div class="swiper min-w-[50%] m-0">
+          <div class="max-w-96 swiper-wrapper">
+            <!-- Slides -->
+            <div class="w-16 swiper-slide">
+              <img src="../public/product1.jpg" alt="Product Image" />
+            </div>
+            <div class="w-16 swiper-slide">
+              <img src="../public/product2.jpg" alt="Product Image" />
+            </div>
+            <div class="w-16 swiper-slide">
+              <img src="../public/product3.jpg" alt="Product Image" />
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+          <!-- If we need navigation buttons -->
+          <div class="customSm:after:hidden swiper-button-prev"></div>
+          <div class="swiper-button-next customSm:after:hidden"></div>
+
+          <!-- If we need scrollbar -->
+        </div>
+        <div class="bg-white text-customBg text-left px-4 py-6">
+          <h2 class="text-3xl font-bold mb-3">Slittos's Peri Peri Flavour</h2>
+          <h3
+            class="text-2xl mb-1 font-semibold underline-offset-4 decoration-customLogo underline"
+          >
+            Description
+          </h3>
+          <p class="font-medium">
+            Slittos's Peri Peri flavored tapioca chips, the perfect blend of
+            fiery spice and tantalizing tanginess. Elevate your snacking
+            experience with each crispy bite, as the bold flavors of Peri Peri
+            awaken your taste buds. enjoy the freshness and crunchiness anytime,
+            anywhere. Made with pure cold-pressed coconut oil, Slittos Peri Peri
+            chips offer a guilt-free indulgence for those craving a flavorful
+            snack with a kick.
+          </p>
+          <h3
+            class="mt-4 text-2xl mb-1 font-semibold underline-offset-4 decoration-customLogo underline"
+          >
+            Ingredients
+          </h3>
+          <p class="font-medium">
+            Tapioca,cold preseed coconut oil,salt oregano,Kashmiri chili powder,
+            black pepper powder, amchur powder
+          </p>
+          <h1
+            class="mt-4 w-64 text-2xl font-semibold text-white p-2 bg-customLogo text-center"
+          >
+            Coming soon!
+          </h1>
+        </div>
+      </div>
+    </section>
+
+    <section id="connect" class="bg-white text-center py-8">
+      <h1
+        class="text-3xl font-bold underline-offset-4 decoration-customLogo text-customBg mb-8 underline"
+      >
+        Conect With Us
+      </h1>
+      <div class="flex justify-center gap-6">
+        <a
+          href="https://www.facebook.com/profile.php?id=61558868970267&mibextid=ZbWKwL"
+          ><ion-icon
+            name="logo-facebook"
+            class="text-5xl text-customLogo cursor-pointer"
+          ></ion-icon>
+        </a>
+        <a href="https://www.instagram.com/slittossnacks?igsh=YzljYTk1ODg3Zg== "
+          ><ion-icon
+            name="logo-instagram"
+            class="text-5xl text-customLogo cursor-pointer"
+          ></ion-icon>
+        </a>
+
+        <a href="https://www.linkedin.com/company/slittos/"
+          ><ion-icon
+            name="logo-linkedin"
+            class="text-5xl text-customLogo cursor-pointer"
+          ></ion-icon>
+        </a>
+        <a
+          href="https://www.snapchat.com/add/slittos?share_id=6_zKuk0PkQY&locale=en-IN"
+          ><ion-icon
+            name="logo-snapchat"
+            class="text-5xl text-customLogo cursor-pointer"
+          ></ion-icon>
+        </a>
+        <a href="https://www.youtube.com/@slittos"
+          ><ion-icon
+            name="logo-youtube"
+            class="text-5xl text-customLogo cursor-pointer"
+          ></ion-icon>
+        </a>
+        <!-- <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-12 w-12 fill-customLogo"
+        viewBox="0,0,256,256"
+      >
+          fill-rule="nonzero" stroke="none" stroke-width="1"
+          stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+          stroke-dasharray="" stroke-dashoffset="0" font-family="none"
+          font-weight="none" font-size="none" text-anchor="none"
+          style="mix-blend-mode: normal" >
+          <g transform="scale(8.53333,8.53333)">
+            <path
+              d="M26.37,26l-8.795,-12.822l0.015,0.012l7.93,-9.19h-2.65l-6.46,7.48l-5.13,-7.48h-6.95l8.211,11.971l-0.001,-0.001l-8.66,10.03h2.65l7.182,-8.322l5.708,8.322zM10.23,6l12.34,18h-2.1l-12.35,-18z"
+            ></path>
+          </g>
+        </g>
+      </svg> -->
+      </div>
+    </section>
+    <script src="index.js"></script>
+  </body>
+</html>
