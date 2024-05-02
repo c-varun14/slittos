@@ -4,6 +4,9 @@ const colors = require("tailwindcss/colors");
 module.exports = {
   content: ["./**/*.{html,js}"],
   theme: {
+    fontFamily: {
+      roboto: ["Roboto", "sans-serif"],
+    },
     extend: {
       boxShadow: {
         navShadow: "0 0 22px #222",

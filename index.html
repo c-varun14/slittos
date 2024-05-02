@@ -6,6 +6,13 @@
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <link rel="stylesheet" href="./src/output.css" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -13,42 +20,71 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
 
-  <body class="bg-customBg text-white">
-    <header class="bg-black shadow-navShadow px-2 md:px-8" >
+  <body class="bg-customBg text-white font-roboto">
+    <header
+      class="bg-black shadow-navShadow px-2 md:px-8 fixed top-0 w-full z-30"
+    >
       <nav class="flex justify-between items-center w-full">
-        <img src="./public/logo.png" class="h-16 md:h-20 relative top-3" alt="Slittos" />
+        <img
+          src="./public/logo.png"
+          class="h-16 md:h-20 relative top-3"
+          alt="Slittos"
+        />
         <div
-          class="nav-links bg-black duration-500 md:static absolute md:min-h-fit min-h-[40vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5"
+          class="nav-links bg-black py-8 duration-500 md:static absolute md:min-h-fit max-h-[40vh] left-0 bottom-[100%] md:w-auto w-full flex items-center px-5"
         >
           <ul
             class="customSm:w-[90vw] flex md:flex-row flex-col text-white md:items-center md:gap-[4vw] gap-8"
           >
-              <a class="hover:bg-customLogo py-1 px-2 customSm:border-b-2 decoration-white" href="#aboutUs" name="aboutUs">About Us</a>
-              <a class="hover:bg-customLogo py-1 px-2 customSm:border-b-2 decoration-white"  href="#product" name="product">Our Product</a>
-              <a class="hover:bg-customLogo py-1 px-2 customSm:border-b-2 decoration-white"  href="#connect" name="connect">Connect With Us</a>
+            <a
+              class="hover:bg-customLogo text-xs font-bold py-1 px-2 customSm:border-b-2 decoration-white"
+              href="#aboutUs"
+              name="aboutUs"
+              >ABOUT US</a
+            >
+            <a
+              class="hover:bg-customLogo text-xs font-bold py-1 px-2 customSm:border-b-2 decoration-white"
+              href="#product"
+              name="product"
+              >OUR PRODUCT</a
+            >
+            <a
+              class="hover:bg-customLogo text-xs font-bold py-1 px-2 customSm:border-b-2 decoration-white"
+              href="#connect"
+              name="connect"
+              >CONNECT WITH US</a
+            >
           </ul>
         </div>
         <div class="flex items-center gap-6 md:hidden">
           <ion-icon
             onclick="onToggleMenu(this)"
             name="menu"
-            class="text-3xl cursor-pointer"
+            class="text-2xl cursor-pointer"
           >
           </ion-icon>
         </div>
       </nav>
     </header>
 
-    <section id="aboutUs" class="pb-5 text-center mt-1">
-      <img src="./public/aboutImage.jpg" alt="Could not load image" class="w-full lg:hidden"  />
-      <img src="./public/aboutImageSm.jpg" alt="Could not load image" class="w-full hidden lg:visible"  />
+    <section id="aboutUs" class="pb-5 text-center">
+      <img
+        src="./public/aboutImage.jpg"
+        alt="Could not load image"
+        class="w-full lg:hidden"
+      />
+      <img
+        src="./public/aboutImageSm.jpg"
+        alt="Could not load image"
+        class="w-full hidden lg:block"
+      />
 
       <h1
-        class="text-3xl font-bold underline-offset-4 decoration-customLogo underline my-4"
+        class="text-2xl font-bold underline-offset-4 decoration-customLogo underline mb-4 mt-8"
       >
         ABOUT US
       </h1>
-      <p class="mx-4 max-w-4xl md:mx-auto">
+      <p class="px-4 max-w-xl lg:max-w-3xl mx-auto">
         Welcome to Slittos, where passion for gaming meets the joy of snacking!
         Founded with a vision to revolutionize the gaming snacking experience,
         Slittos is more than just a chips company—it's a lifestyle brand
@@ -70,7 +106,7 @@
       data-carousel="slide"
     >
       <h1
-        class="text-3xl font-bold underline-offset-4 decoration-customBg my-8 underline"
+        class="text-2xl font-bold underline-offset-4 decoration-customBg my-8 underline"
       >
         OUR PRODUCT
       </h1>
@@ -93,17 +129,15 @@
           <!-- If we need navigation buttons -->
           <div class="customSm:after:hidden swiper-button-prev"></div>
           <div class="swiper-button-next customSm:after:hidden"></div>
-
-          <!-- If we need scrollbar -->
         </div>
-        <div class="bg-white text-customBg text-left px-4 py-6 ">
-          <h2 class="text-3xl font-bold mb-3">Slittos's Peri Peri Flavour</h2>
+        <div class="bg-white text-customBg text-left px-4 py-6">
+          <h2 class="text-2xl font-bold mb-3">Slittos's Peri Peri Flavour</h2>
           <h3
-            class="text-2xl mb-1 font-semibold underline-offset-4 decoration-customLogo underline"
+            class="text-xl mb-1 font-semibold underline-offset-4 decoration-customLogo underline"
           >
             Description
           </h3>
-          <p class="font-medium">
+          <p class="font-medium text-sm">
             Slittos's Peri Peri flavored tapioca chips, the perfect blend of
             fiery spice and tantalizing tanginess. Elevate your snacking
             experience with each crispy bite, as the bold flavors of Peri Peri
@@ -113,16 +147,16 @@
             snack with a kick.
           </p>
           <h3
-            class="mt-4 text-2xl mb-1 font-semibold underline-offset-4 decoration-customLogo underline"
+            class="mt-4 text-xl mb-1 font-semibold underline-offset-4 decoration-customLogo underline"
           >
             Ingredients
           </h3>
-          <p class="font-medium">
+          <p class="font-medium text-sm">
             Tapioca,cold preseed coconut oil,salt oregano,Kashmiri chili powder,
             black pepper powder, amchur powder
           </p>
           <h1
-            class="mt-4 w-64 text-2xl font-semibold text-white p-2 bg-customLogo text-center"
+            class="mt-4 w-64 text-xl font-semibold text-white p-2 bg-customLogo text-center"
           >
             Coming soon!
           </h1>
@@ -132,7 +166,7 @@
 
     <footer id="connect" class="text-center py-8">
       <h1
-        class="text-3xl font-bold underline-offset-4 decoration-customLogo mb-8 underline"
+        class="text-2xl font-bold underline-offset-4 decoration-customLogo mb-8 underline"
       >
         Connect With Us
       </h1>
@@ -141,57 +175,65 @@
           href="https://www.facebook.com/profile.php?id=61558868970267&mibextid=ZbWKwL"
           ><ion-icon
             name="logo-facebook"
-            class="text-5xl text-customLogo cursor-pointer"
+            class="text-4xl md:text-5xl text-customLogo cursor-pointer"
           ></ion-icon>
         </a>
         <a href="https://www.instagram.com/slittossnacks"
           ><ion-icon
             name="logo-instagram"
-            class="text-5xl text-customLogo cursor-pointer"
+            class="text-4xl md:text-5xl text-customLogo cursor-pointer"
           ></ion-icon>
         </a>
 
         <a href="https://www.linkedin.com/company/slittos/"
           ><ion-icon
             name="logo-linkedin"
-            class="text-5xl text-customLogo cursor-pointer"
+            class="text-4xl md:text-5xl text-customLogo cursor-pointer"
           ></ion-icon>
         </a>
-        <a
-          href="https://www.snapchat.com/add/slittos"
+        <a href="https://www.snapchat.com/add/slittos"
           ><ion-icon
             name="logo-snapchat"
-            class="text-5xl text-customLogo cursor-pointer"
+            class="text-4xl md:text-5xl text-customLogo cursor-pointer"
           ></ion-icon>
         </a>
         <a href="https://www.youtube.com/@slittos"
           ><ion-icon
             name="logo-youtube"
-            class="text-5xl text-customLogo cursor-pointer"
+            class="text-4xl md:text-5xl text-customLogo cursor-pointer"
           ></ion-icon>
         </a>
         <a href="https://x.com/slittos">
-        <svg
-        xmlns="http://www.w3.org/2000/svg"
-        class="h-12 w-12 fill-customLogo"
-        viewBox="0,0,256,256"
-      >
-          fill-rule="nonzero" stroke="none" stroke-width="1"
-          stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
-          stroke-dasharray="" stroke-dashoffset="0" font-family="none"
-          font-weight="none" font-size="none" text-anchor="none"
-          style="mix-blend-mode: normal" >
-          <g transform="scale(8.53333,8.53333)">
-            <path
-              d="M26.37,26l-8.795,-12.822l0.015,0.012l7.93,-9.19h-2.65l-6.46,7.48l-5.13,-7.48h-6.95l8.211,11.971l-0.001,-0.001l-8.66,10.03h2.65l7.182,-8.322l5.708,8.322zM10.23,6l12.34,18h-2.1l-12.35,-18z"
-            ></path>
-          </g>
-        </g>
-      </svg>
-    </a>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-9 w-9 md:h-12 md:w-12 fill-customLogo"
+            viewBox="0,0,256,256"
+          >
+            <g
+              transform="scale(8.53333,8.53333)"
+              fill-rule="nonzero"
+              stroke="none"
+              stroke-width="1"
+              stroke-linecap="butt"
+              stroke-linejoin="miter"
+              stroke-miterlimit="10"
+              stroke-dasharray=""
+              stroke-dashoffset="0"
+              font-family="none"
+              font-weight="none"
+              font-size="none"
+              text-anchor="none"
+              style="mix-blend-mode: normal"
+            >
+              <path
+                d="M26.37,26l-8.795,-12.822l0.015,0.012l7.93,-9.19h-2.65l-6.46,7.48l-5.13,-7.48h-6.95l8.211,11.971l-0.001,-0.001l-8.66,10.03h2.65l7.182,-8.322l5.708,8.322zM10.23,6l12.34,18h-2.1l-12.35,-18z"
+              ></path>
+            </g>
+          </svg>
+        </a>
       </div>
-      <img class="mx-auto h-36 mt-8" src="./public/logo.png" alt="Logo">
-      <p>@All rights reserved to slittos</p>
+      <img class="mx-auto h-36 mt-8" src="./public/logo.png" alt="Logo" />
+      <p>All rights reserved to slittos</p>
     </footer>
     <script src="./src/index.js"></script>
   </body>

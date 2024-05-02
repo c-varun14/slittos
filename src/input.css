@@ -5,3 +5,8 @@
 :root {
   --swiper-theme-color: #dc5923 !important;
 }
+
+* {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
